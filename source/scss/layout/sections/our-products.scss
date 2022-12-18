@@ -1,0 +1,73 @@
+.our-products{
+    .products-list{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0;
+            list-style: none;
+            padding: 0 15px;
+            gap: 30px;
+            @media screen and (max-width: 1024px) {
+                gap: 0px;
+                padding: 0;
+            }
+            li{
+                @media screen and (max-width: 1024px) {
+                    width: 50%;
+                    padding: 8px;
+                    border-top: 1px solid #DFDED8;
+                        &:nth-child(odd) {
+                            border-right: 1px solid #DFDED8;
+                        }
+                }
+                .product-detales{
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: 400;
+                    font-size: 12px;
+                    font-family: $fontMain;
+                    @media screen and (max-width: 1024px) {
+                        flex-direction: column;
+                        gap: 24px;
+                    }  
+                    .product-title{
+                        color: $textMainColor;
+                    }
+                    .product-price{
+                        color: $cmain;
+                    }
+                }
+                .product-title{
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+                figure{
+                    img{
+                        align-items: center; 
+                        @media screen and (max-width: 1024px) {
+                            width: 100%;
+                        }  
+                    }
+                }
+            }
+            li.is-hidden{
+                display: none;
+            }
+        } 
+    }
+    .shopall{
+        margin-top: 24px;
+        @media screen and (max-width: 1024px) {
+            margin: 0px;
+        }  
+        a{
+            display: block;
+            font-size: 12px;
+            text-decoration: none;
+            color: #323334;
+            text-transform: uppercase;
+            font-family: $fontMain;
+        }
+    }
+}

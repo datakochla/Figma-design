@@ -1,0 +1,52 @@
+section.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 737px;
+    figure{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .hero_content{
+        .page_title{
+            margin-bottom: 48px;
+            font-size: 96px;
+            color: $cwhite;
+            text-align: center;
+            span{
+                font-style: italic;
+            }
+        }
+        .hero_button{
+            display: flex;
+            justify-content: center;
+            a{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 36px;
+                border-radius: 8px;
+                background-color: $buttonColor;
+                color: $cmain;
+                text-decoration: none;        
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    section.hero{
+        .hero_content{
+            .page_title{
+                font-size: 36px;
+            }
+        }
+    }
+}
